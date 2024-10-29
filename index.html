@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interview Questions</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            color: white;
+            margin-top: 20px;
+        }
+        .question-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background-color: #222;
+        }
+        .question {
+            font-weight: bold;
+            font-size: 16px;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+        .answer {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .explanation {
+            font-size: 14px;
+            color: #bbb;
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #555;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Interview Questions</h1>
+
+    <div class="question-container">
+        <div class="question">Question 1: What is JavaScript, and how is it used in web development?</div>
+        <div class="answer">
+            <strong>Answer (English):</strong><br>
+            JavaScript is a high-level, versatile programming language that enables dynamic interactivity on websites. It is primarily used for client-side development, allowing developers to create and control dynamic website content, such as interactive forms, animations, and real-time updates without reloading the page. It’s widely used alongside HTML and CSS to create full-fledged web applications.
+        </div>
+        <div class="explanation">
+            <strong>Explanation (Hindi):</strong><br>
+            JavaScript एक उच्च-स्तरीय, बहुउद्देशीय प्रोग्रामिंग भाषा है जो वेबसाइट्स में डायनामिक इंटरेक्टिविटी को सक्षम बनाती है। इसे मुख्य रूप से क्लाइंट-साइड विकास के लिए उपयोग किया जाता है, जिससे डेवलपर्स इंटरैक्टिव फॉर्म, एनीमेशन, और रियल-टाइम अपडेट जैसे डायनामिक कंटेंट बना सकते हैं। यह HTML और CSS के साथ मिलकर संपूर्ण वेब एप्लिकेशन बनाने के लिए व्यापक रूप से उपयोग होता है।
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="question-container">
+        <div class="question">Question 2: Explain the concept of "closures" in JavaScript.</div>
+        <div class="answer">
+            <strong>Answer (English):</strong><br>
+            A closure in JavaScript is a function that remembers its lexical scope even when the function is executed outside of its original scope. This happens because functions in JavaScript have access to variables defined in their parent scope, even after the outer function has finished executing. Closures are often used to create private variables and functions.
+        </div>
+        <div class="explanation">
+            <strong>Explanation (Hindi):</strong><br>
+            JavaScript में "क्लोजर" वह फंक्शन है जो अपने लेक्सिकल स्कोप को याद रखता है, भले ही वह फंक्शन अपने मूल स्कोप के बाहर निष्पादित हो। इसका कारण यह है कि JavaScript में फंक्शंस को उनके पैरेंट स्कोप में परिभाषित किए गए वेरिएबल्स तक एक्सेस होती है, भले ही बाहरी फंक्शन पूरा हो गया हो। क्लोजर का उपयोग आमतौर पर प्राइवेट वेरिएबल्स और फंक्शन्स बनाने के लिए किया जाता है।
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="question-container">
+        <div class="question">Question 3: What is the difference between <code>let</code>, <code>var</code>, and <code>const</code> in JavaScript?</div>
+        <div class="answer">
+            <strong>Answer (English):</strong><br>
+            - <code>var</code> is function-scoped, meaning it is accessible throughout the function in which it’s declared.<br>
+            - <code>let</code> and <code>const</code> are block-scoped, meaning they are only accessible within the block where they are declared.<br>
+            - <code>let</code> allows reassignment, while <code>const</code> does not.<br>
+            - <code>var</code> can be hoisted, but it might lead to unexpected results, whereas <code>let</code> and <code>const</code> are hoisted differently and cannot be used before they are declared.
+        </div>
+        <div class="explanation">
+            <strong>Explanation (Hindi):</strong><br>
+            - <code>var</code> का स्कोप फंक्शन के अनुसार होता है, इसका मतलब यह है कि यह उस फंक्शन के भीतर हर जगह एक्सेस हो सकता है जहां इसे घोषित किया गया है।<br>
+            - <code>let</code> और <code>const</code> का स्कोप ब्लॉक के अनुसार होता है, इसका मतलब यह है कि यह केवल उस ब्लॉक में एक्सेस हो सकता है जहां इसे घोषित किया गया है।<br>
+            - <code>let</code> को पुनः असाइन किया जा सकता है, जबकि <code>const</code> को नहीं।<br>
+            - <code>var</code> को होइस्ट किया जा सकता है, लेकिन यह अनपेक्षित परिणामों का कारण बन सकता है, जबकि <code>let</code> और <code>const</code> अलग तरह से होइस्ट होते हैं और उन्हें उनके डिक्लेरेशन से पहले उपयोग नहीं किया जा सकता।
+        </div>
+    </div>
+
+<hr>
+
+    <!-- Question 4 -->
+<div class="question-container">
+    <div class="question">Question 4: What is the purpose of JavaScript's <code>this</code> keyword?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The <code>this</code> keyword in JavaScript refers to the current context in which a function is being executed. Its value is determined by how the function is called. In global functions, <code>this</code> refers to the global object (e.g., <code>window</code> in browsers), while in methods, it refers to the object the method belongs to. Arrow functions do not bind <code>this</code>, so they inherit it from their containing scope.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में <code>this</code> कीवर्ड का उपयोग उस वर्तमान संदर्भ का उल्लेख करने के लिए किया जाता है जिसमें एक फंक्शन निष्पादित हो रहा है। इसका मान इस पर निर्भर करता है कि फंक्शन को कैसे कॉल किया गया है। ग्लोबल फंक्शंस में, <code>this</code> ग्लोबल ऑब्जेक्ट (जैसे, ब्राउज़र में <code>window</code>) को संदर्भित करता है, जबकि किसी मेथड में, यह उस ऑब्जेक्ट को संदर्भित करता है जिससे वह मेथड संबंधित है। एरो फंक्शंस <code>this</code> को बाइंड नहीं करते हैं, इसलिए वे इसे उनके कंटेनिंग स्कोप से इनहेरिट करते हैं।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 5 -->
+<div class="question-container">
+    <div class="question">Question 5: What is the difference between synchronous and asynchronous JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Synchronous JavaScript executes code in a sequential order, meaning each operation waits for the previous one to complete before continuing. Asynchronous JavaScript, on the other hand, allows certain operations, like I/O tasks, to run in the background without blocking the execution of subsequent code. This is often managed using callbacks, promises, or async/await syntax to handle tasks like network requests, timers, and file operations.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        सिंक्रोनस JavaScript कोड को एक क्रमिक क्रम में निष्पादित करता है, यानी प्रत्येक ऑपरेशन अगले ऑपरेशन को शुरू करने से पहले पिछले ऑपरेशन के पूरा होने की प्रतीक्षा करता है। इसके विपरीत, असिंक्रोनस JavaScript कुछ ऑपरेशंस, जैसे I/O कार्यों को, बैकग्राउंड में चलने की अनुमति देती है।
+    </div>
+</div>
+
+<!-- Question 6 -->
+<div class="question-container">
+    <div class="question">Question 6: What is the difference between "==" and "===" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        In JavaScript, <code>==</code> is the equality operator that checks for equality after converting both operands to the same type, while <code>===</code> is the strict equality operator that checks for equality without any type conversion. This means <code>===</code> will only return true if both the value and the type are the same.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में <code>==</code> एक इक्वेलिटी ऑपरेटर है जो दोनों ऑपरेटेंड्स को समान प्रकार में परिवर्तित करने के बाद समानता की जांच करता है, जबकि <code>===</code> एक सख्त इक्वेलिटी ऑपरेटर है जो बिना किसी प्रकार के परिवर्तन के समानता की जांच करता है। इसका मतलब है कि <code>===</code> केवल तभी true लौटाएगा जब मान और प्रकार दोनों समान हों।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 7 -->
+<div class="question-container">
+    <div class="question">Question 7: What is an IIFE (Immediately Invoked Function Expression) in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        An IIFE (Immediately Invoked Function Expression) is a function in JavaScript that runs as soon as it is defined. It is typically used to create a private scope and avoid polluting the global scope. The function is wrapped in parentheses and followed by another set of parentheses to immediately execute it.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        IIFE (इमीडियेटली इनवोक्ड फंक्शन एक्सप्रेशन) एक ऐसा फंक्शन है जो जैसे ही परिभाषित होता है वैसे ही चलता है। इसका उपयोग आमतौर पर एक निजी स्कोप बनाने और ग्लोबल स्कोप को प्रदूषित करने से बचने के लिए किया जाता है। इस फंक्शन को परेथेसिस में लपेटा जाता है और इसके बाद इसे तुरंत निष्पादित करने के लिए एक और परेथेसिस दिया जाता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 8 -->
+<div class="question-container">
+    <div class="question">Question 8: Explain "hoisting" in JavaScript.</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compile phase. This means that variables declared with <code>var</code> and functions can be accessed before they are defined in the code. However, variables declared with <code>let</code> and <code>const</code> are hoisted differently and cannot be accessed before their declaration.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में होइस्टिंग एक व्यवहार है जिसमें वेरिएबल और फंक्शन डिक्लेरेशंस को उनके कंटेनिंग स्कोप के शीर्ष पर ले जाया जाता है। इसका मतलब है कि <code>var</code> से घोषित वेरिएबल और फंक्शंस को उनके कोड में परिभाषित होने से पहले एक्सेस किया जा सकता है। हालांकि, <code>let</code> और <code>const</code> से घोषित वेरिएबल्स को अलग तरह से होइस्ट किया जाता है और उन्हें उनके डिक्लेरेशन से पहले एक्सेस नहीं किया जा सकता।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 9 -->
+<div class="question-container">
+    <div class="question">Question 9: What is a promise in JavaScript, and how does it work?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        A promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. A promise can be in one of three states: pending, fulfilled, or rejected. It helps manage asynchronous tasks by providing <code>then</code>, <code>catch</code>, and <code>finally</code> methods to handle results once the operation completes.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में एक प्रॉमिस एक ऑब्जेक्ट है जो एक असिंक्रोनस ऑपरेशन के पूरा (या असफल) होने और इसके परिणाम को दर्शाता है। एक प्रॉमिस तीन अवस्थाओं में हो सकता है: पेंडिंग, फुलफिल्ड, या रिजेक्टेड। यह <code>then</code>, <code>catch</code>, और <code>finally</code> मेथड्स प्रदान करके असिंक्रोनस कार्यों को प्रबंधित करने में मदद करता है ताकि ऑपरेशन पूरा होने पर परिणामों को संभाला जा सके।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 10 -->
+<div class="question-container">
+    <div class="question">Question 10: What is the use of the "async" and "await" keywords in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The <code>async</code> and <code>await</code> keywords in JavaScript are used to handle asynchronous operations in a more readable way. The <code>async</code> keyword is placed before a function to signify that it returns a promise, while <code>await</code> pauses the execution of an async function until the promise is resolved. This makes asynchronous code look more like synchronous code.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में <code>async</code> और <code>await</code> कीवर्ड का उपयोग असिंक्रोनस ऑपरेशंस को अधिक पठनीय तरीके से संभालने के लिए किया जाता है। <code>async</code> कीवर्ड एक फंक्शन के पहले लगाया जाता है ताकि यह संकेत मिले कि यह एक प्रॉमिस लौटाता है, जबकि <code>await</code> एक async फंक्शन के निष्पादन को तब तक रोकता है जब तक प्रॉमिस हल नहीं हो जाता। इससे असिंक्रोनस कोड सिंक्रोनस कोड जैसा दिखता है।
+    </div>
+</div>
+
+<hr>
+<!-- Question 11 -->
+<div class="question-container">
+    <div class="question">Question 11: What is event delegation in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Event delegation is a technique in JavaScript where a single event listener is added to a parent element to handle events triggered by its child elements. Instead of adding individual event listeners to each child, the event is managed through the parent, improving efficiency and performance, especially in cases with dynamically added elements.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में इवेंट डेलीगेशन एक तकनीक है जहां किसी पैरेंट एलिमेंट पर एक ही इवेंट लिसनर जोड़ दिया जाता है ताकि उसके चाइल्ड एलिमेंट्स द्वारा ट्रिगर हुए इवेंट्स को संभाला जा सके। प्रत्येक चाइल्ड पर अलग इवेंट लिसनर जोड़ने के बजाय, पैरेंट के माध्यम से इवेंट को प्रबंधित किया जाता है, जो विशेष रूप से डायनामिक रूप से जोड़े गए एलिमेंट्स के मामलों में दक्षता और प्रदर्शन को बेहतर बनाता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 12 -->
+<div class="question-container">
+    <div class="question">Question 12: Explain "callback functions" in JavaScript.</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        A callback function is a function passed as an argument to another function, which is then invoked within the outer function to complete a routine or action. Callbacks are essential in asynchronous programming, as they allow code to execute once an operation (e.g., a network request) completes.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में, एक कॉलबैक फंक्शन वह फंक्शन होता है जिसे एक अन्य फंक्शन के तर्क के रूप में पास किया जाता है और फिर इसे बाहरी फंक्शन के भीतर एक रूटीन या एक्शन को पूरा करने के लिए बुलाया जाता है। असिंक्रोनस प्रोग्रामिंग में कॉलबैक्स महत्वपूर्ण हैं क्योंकि वे किसी ऑपरेशन (जैसे, नेटवर्क अनुरोध) के पूरा होने पर कोड को निष्पादित होने की अनुमति देते हैं।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 13 -->
+<div class="question-container">
+    <div class="question">Question 13: What is the purpose of the "new" keyword in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The <code>new</code> keyword in JavaScript is used to create a new instance of an object from a constructor function. It sets the value of <code>this</code> within the constructor to the new object and returns the new object instance, allowing developers to create multiple objects with similar properties and methods.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में <code>new</code> कीवर्ड का उपयोग एक कंस्ट्रक्टर फंक्शन से एक नया ऑब्जेक्ट इंस्टेंस बनाने के लिए किया जाता है। यह कंस्ट्रक्टर के भीतर <code>this</code> के मान को नए ऑब्जेक्ट में सेट करता है और नए ऑब्जेक्ट इंस्टेंस को लौटाता है, जिससे डेवलपर्स समान गुणों और विधियों वाले कई ऑब्जेक्ट्स बना सकते हैं।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 14 -->
+<div class="question-container">
+    <div class="question">Question 14: Explain the concept of "prototypal inheritance" in JavaScript.</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Prototypal inheritance is a JavaScript feature where objects can inherit properties and methods from other objects. Every object has a prototype, which serves as a template object. This allows one object to access the properties and methods of another object, enabling a form of inheritance that is central to JavaScript's object-oriented programming.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        प्रोटोटाइपल इनहेरिटेंस JavaScript की एक विशेषता है जहां ऑब्जेक्ट्स अन्य ऑब्जेक्ट्स से गुण और विधियाँ प्राप्त कर सकते हैं। प्रत्येक ऑब्जेक्ट का एक प्रोटोटाइप होता है, जो एक टेम्पलेट ऑब्जेक्ट के रूप में कार्य करता है। इससे एक ऑब्जेक्ट को दूसरे ऑब्जेक्ट के गुणों और विधियों तक पहुंचने की अनुमति मिलती है, जो JavaScript के ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग का एक महत्वपूर्ण हिस्सा है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 15 -->
+<div class="question-container">
+    <div class="question">Question 15: What is the purpose of "strict mode" in JavaScript, and how is it enabled?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Strict mode is a way to opt into a restricted variant of JavaScript, where certain errors that are typically silent are thrown as exceptions, and some JavaScript behaviors are prevented. It is enabled by adding <code>"use strict";</code> at the top of a script or function. Strict mode helps improve code quality by preventing certain actions and catching common mistakes.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        सख्त मोड JavaScript के प्रतिबंधित संस्करण में प्रवेश करने का एक तरीका है, जहां सामान्य रूप से मौन रहने वाली कुछ त्रुटियों को अपवाद के रूप में फेंक दिया जाता है और कुछ JavaScript व्यवहारों को रोका जाता है। इसे स्क्रिप्ट या फंक्शन के शीर्ष पर <code>"use strict";</code> जोड़कर सक्षम किया जाता है। सख्त मोड कुछ कार्यों को रोककर और सामान्य गलतियों को पकड़कर कोड की गुणवत्ता में सुधार करने में मदद करता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 16 -->
+<div class="question-container">
+    <div class="question">Question 16: What is the "spread" operator in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The spread operator, represented by three dots (<code>...</code>), allows an iterable (like an array or object) to be expanded in places where multiple elements or arguments are expected. It is commonly used to clone arrays, concatenate arrays, or pass an array of arguments to a function.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में स्प्रेड ऑपरेटर, जो तीन डॉट्स (<code>...</code>) द्वारा प्रदर्शित होता है, एक इटेरेबल (जैसे, एरे या ऑब्जेक्ट) को उन स्थानों पर विस्तारित करने की अनुमति देता है जहां कई तत्व या तर्क अपेक्षित होते हैं। यह आमतौर पर एरे को क्लोन करने, एरे जोड़ने, या किसी फंक्शन में एरे को तर्क के रूप में पास करने के लिए उपयोग किया जाता है।
+    </div>
+</div>
+
+<hr>
+
+
+<!-- Question 17 -->
+<div class="question-container">
+    <div class="question">Question 17: What is the "rest" parameter in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "rest" parameter, represented by three dots (<code>...</code>), allows a function to accept an indefinite number of arguments as an array. It is used in the function definition to gather all remaining arguments into a single array, making it helpful for handling variable numbers of parameters.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में "rest" पैरामीटर, जो तीन डॉट्स (<code>...</code>) द्वारा प्रदर्शित होता है, एक फंक्शन को अनिश्चित संख्या में तर्कों को एक एरे के रूप में स्वीकार करने की अनुमति देता है। यह फंक्शन की परिभाषा में उपयोग किया जाता है ताकि सभी शेष तर्कों को एक ही एरे में एकत्र किया जा सके, जिससे यह वेरिएबल पैरामीटर की संख्या को प्रबंधित करने में सहायक होता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 18 -->
+<div class="question-container">
+    <div class="question">Question 18: What is a "generator" function in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        A generator function in JavaScript is defined using <code>function*</code> and can pause its execution at each <code>yield</code> expression and later resume from where it left off. Generators provide a way to handle asynchronous operations more effectively and are commonly used with <code>for...of</code> loops to iterate over custom iterable objects.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में एक जेनरेटर फंक्शन को <code>function*</code> का उपयोग करके परिभाषित किया जाता है और यह प्रत्येक <code>yield</code> अभिव्यक्ति पर अपना निष्पादन रोक सकता है और बाद में वहीं से फिर से शुरू कर सकता है। जेनरेटर असिंक्रोनस ऑपरेशंस को अधिक प्रभावी ढंग से प्रबंधित करने का एक तरीका प्रदान करते हैं और कस्टम इटेरेबल वस्तुओं पर पुनरावृत्त करने के लिए <code>for...of</code> लूप के साथ सामान्य रूप से उपयोग किए जाते हैं।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 19 -->
+<div class="question-container">
+    <div class="question">Question 19: Explain the difference between "call", "apply", and "bind" methods in JavaScript.</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The <code>call</code> and <code>apply</code> methods both invoke functions with a specified <code>this</code> context. <code>call</code> takes individual arguments, while <code>apply</code> accepts arguments as an array. The <code>bind</code> method creates a new function with a specified <code>this</code> context and does not immediately execute it, allowing it to be invoked later.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में <code>call</code> और <code>apply</code> दोनों मेथड्स एक विशेष <code>this</code> संदर्भ के साथ फंक्शन को बुलाते हैं। <code>call</code> व्यक्तिगत तर्कों को लेता है, जबकि <code>apply</code> तर्कों को एक एरे के रूप में स्वीकार करता है। <code>bind</code> मेथड एक नया फंक्शन बनाता है जिसमें एक निर्दिष्ट <code>this</code> संदर्भ होता है और इसे तुरंत निष्पादित नहीं करता, जिससे इसे बाद में बुलाया जा सकता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 20 -->
+<div class="question-container">
+    <div class="question">Question 20: What is the "debounce" function, and why is it used?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "debounce" function is a programming technique that ensures a function is only called once within a specified time period, even if it’s triggered multiple times. It’s often used to limit the rate of calls to functions such as resize or scroll event handlers, enhancing performance.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Debounce" फंक्शन एक प्रोग्रामिंग तकनीक है जो सुनिश्चित करती है कि एक फंक्शन को निर्दिष्ट समय अवधि के भीतर केवल एक बार ही बुलाया जाए, भले ही इसे कई बार ट्रिगर किया गया हो। इसे अक्सर उन फंक्शन्स के कॉल की दर को सीमित करने के लिए उपयोग किया जाता है, जैसे कि रिसाइज़ या स्क्रॉल इवेंट हैंडलर, जिससे प्रदर्शन में सुधार होता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 21 -->
+<div class="question-container">
+    <div class="question">Question 21: What is a "Polyfill" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        A "Polyfill" is a piece of code that provides modern functionality on older browsers that do not natively support it. It allows developers to use newer JavaScript features while maintaining compatibility with older environments.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript में "Polyfill" एक कोड का टुकड़ा है जो पुराने ब्राउज़र्स में आधुनिक कार्यक्षमता प्रदान करता है, जो इसे स्वाभाविक रूप से समर्थन नहीं करते। यह डेवलपर्स को नए JavaScript फीचर्स का उपयोग करने की अनुमति देता है, जबकि पुराने वातावरण के साथ संगतता बनाए रखता है।
+    </div>
+</div>
+
+<hr>
+<!-- Question 22 -->
+<div class="question-container">
+    <div class="question">Question 22: What is the "fetch" API in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "fetch" API is a modern way to make HTTP requests in JavaScript. It returns a promise that resolves to the response to the request, allowing developers to handle asynchronous operations more easily. The "fetch" API is more powerful and flexible than older methods like XMLHttpRequest.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Fetch" API एक आधुनिक तरीका है HTTP अनुरोध करने का JavaScript में। यह एक प्रॉमिस लौटाता है जो अनुरोध के उत्तर में हल होता है, जिससे डेवलपर्स को असिंक्रोनस ऑपरेशंस को अधिक आसानी से प्रबंधित करने की अनुमति मिलती है। "Fetch" API पुराने तरीकों जैसे XMLHttpRequest की तुलना में अधिक शक्तिशाली और लचीला है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 23 -->
+<div class="question-container">
+    <div class="question">Question 23: What are JavaScript modules, and how are they used?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        JavaScript modules are reusable pieces of code that can be exported from one file and imported into another. They help in organizing code into separate files and prevent variable collisions. ES6 introduced the <code>import</code> and <code>export</code> statements, making it easier to work with modules.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JavaScript मॉड्यूल पुन: उपयोग किए जाने वाले कोड के टुकड़े होते हैं जिन्हें एक फ़ाइल से निर्यात किया जा सकता है और दूसरी फ़ाइल में आयात किया जा सकता है। ये कोड को अलग-अलग फ़ाइलों में व्यवस्थित करने में मदद करते हैं और वेरिएबल टकराव को रोकते हैं। ES6 ने <code>import</code> और <code>export</code> बयानों को पेश किया, जिससे मॉड्यूल के साथ काम करना आसान हो गया।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 24 -->
+<div class="question-container">
+    <div class="question">Question 24: What is the purpose of the "with" statement in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "with" statement extends the scope chain for a statement. It allows you to write less code by enabling you to omit the object name for its properties, but it is generally discouraged in modern JavaScript due to potential confusion and performance issues.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "With" स्टेटमेंट एक स्टेटमेंट के लिए स्कोप चेन को विस्तारित करता है। यह आपको इसकी प्रॉपर्टीज के लिए ऑब्जेक्ट नाम को छोड़ने की अनुमति देकर कम कोड लिखने में मदद करता है, लेकिन इसे आधुनिक JavaScript में संभावित भ्रम और प्रदर्शन समस्याओं के कारण सामान्यतः हतोत्साहित किया जाता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 25 -->
+<div class="question-container">
+    <div class="question">Question 25: Explain the concept of "template literals" in JavaScript.</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Template literals are string literals enclosed by backticks (<code>`</code>) that allow for multi-line strings and string interpolation. They can include embedded expressions, making it easier to create dynamic strings without the need for concatenation.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        टेम्पलेट लिटरल्स बैकटिक्स (<code>`</code>) द्वारा घिरे स्ट्रिंग लिटरल होते हैं जो मल्टी-लाइन स्ट्रिंग और स्ट्रिंग इंटरपोलशन की अनुमति देते हैं। इनमें अंतर्निहित अभिव्यक्तियाँ शामिल हो सकती हैं, जिससे संयोजन की आवश्यकता के बिना गतिशील स्ट्रिंग बनाना आसान हो जाता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 26 -->
+<div class="question-container">
+    <div class="question">Question 26: What is "shadowing" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Shadowing occurs when a variable declared in a local scope has the same name as a variable in an outer scope. The local variable "shadows" the outer variable, meaning that when the variable is accessed, the local variable is used instead of the outer one.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        शैडोइंग तब होता है जब एक स्थानीय स्कोप में घोषित एक वेरिएबल का नाम एक बाहरी स्कोप में एक वेरिएबल के समान होता है। स्थानीय वेरिएबल बाहरी वेरिएबल को "शैडो" करता है, जिसका अर्थ है कि जब वेरिएबल को एक्सेस किया जाता है, तो स्थानीय वेरिएबल का उपयोग किया जाता है, न कि बाहरी वेरिएबल का।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 27 -->
+<div class="question-container">
+    <div class="question">Question 27: What is the "map" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "map" method is an array function that creates a new array populated with the results of calling a provided function on every element in the calling array. It does not change the original array and is commonly used for transforming data.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Map" मेथड एक एरे फ़ंक्शन है जो एक नया एरे बनाता है जिसमें कॉल करने वाले एरे के हर तत्व पर प्रदान किए गए फ़ंक्शन को कॉल करने के परिणाम होते हैं। यह मूल एरे को नहीं बदलता और डेटा को रूपांतरित करने के लिए सामान्यतः उपयोग किया जाता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 28 -->
+<div class="question-container">
+    <div class="question">Question 28: What is the difference between "slice" and "splice" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "slice" method returns a shallow copy of a portion of an array into a new array object without modifying the original array. In contrast, the "splice" method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Slice" मेथड एक एरे के एक हिस्से की एक सतही प्रति को एक नए एरे ऑब्जेक्ट में लौटाता है, बिना मूल एरे को संशोधित किए। इसके विपरीत, "Splice" मेथड मौजूदा तत्वों को हटाने या बदलने और/या नए तत्वों को उसी स्थान पर जोड़ने के द्वारा एरे की सामग्री को बदलता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 29 -->
+<div class="question-container">
+    <div class="question">Question 29: What is an "event loop" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The event loop is a mechanism that allows JavaScript to perform non-blocking operations by using a single thread. It manages the execution of asynchronous callbacks by continuously checking the call stack and the task queue, ensuring that the code runs efficiently without blocking.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        इवेंट लूप एक तंत्र है जो JavaScript को एक ही थ्रेड का उपयोग करके नॉन-ब्लॉकिंग ऑपरेशंस करने की अनुमति देता है। यह असिंक्रोनस कॉलबैक के निष्पादन का प्रबंधन करता है, कॉल स्टैक और टास्क क्यू की लगातार जांच करके, यह सुनिश्चित करता है कि कोड बिना ब्लॉक किए कुशलता से चलता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 30 -->
+<div class="question-container">
+    <div class="question">Question 30: Explain the concept of "service workers" in JavaScript.</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Service workers are scripts that run in the background of a web application, allowing for features like offline access, push notifications, and caching of resources. They act as a proxy between the web application and the network, enabling improved performance and user experience.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        सर्विस वर्कर्स वे स्क्रिप्ट हैं जो वेब एप्लिकेशन के बैकग्राउंड में चलती हैं, जो ऑफ़लाइन एक्सेस, पुश नोटिफिकेशंस, और संसाधनों के कैशिंग जैसी सुविधाओं की अनुमति देती हैं। ये वेब एप्लिकेशन और नेटवर्क के बीच एक प्रॉक्सी के रूप में कार्य करते हैं, जिससे प्रदर्शन और उपयोगकर्ता अनुभव में सुधार होता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 31 -->
+<div class="question-container">
+    <div class="question">Question 31: What is the "event.preventDefault()" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "event.preventDefault()" method is used to prevent the default behavior of an event from occurring. For example, it can stop a form from submitting or a link from navigating to its href. This method is commonly used in event handling to control how the event should behave.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Event.preventDefault()" मेथड का उपयोग किसी इवेंट के डिफ़ॉल्ट व्यवहार को होने से रोकने के लिए किया जाता है। उदाहरण के लिए, यह एक फ़ॉर्म को सबमिट करने या एक लिंक को उसके href पर नेविगेट करने से रोक सकता है। यह मेथड इवेंट हैंडलिंग में सामान्यतः उपयोग किया जाता है ताकि यह नियंत्रित किया जा सके कि इवेंट को कैसे व्यवहार करना चाहिए।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 32 -->
+<div class="question-container">
+    <div class="question">Question 32: What is the purpose of the "setTimeout" function in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "setTimeout" function is used to execute a piece of code after a specified delay (in milliseconds). It takes two arguments: the function to be executed and the delay time. It is commonly used for delaying actions or creating timers.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "SetTimeout" फ़ंक्शन का उपयोग निर्दिष्ट देरी (मिलीसेकंड में) के बाद कोड के एक टुकड़े को निष्पादित करने के लिए किया जाता है। यह दो तर्क लेता है: निष्पादित किया जाने वाला फ़ंक्शन और देरी का समय। इसका सामान्य उपयोग क्रियाओं को विलंबित करने या टाइमर बनाने के लिए किया जाता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 33 -->
+<div class="question-container">
+    <div class="question">Question 33: What are "data attributes" in HTML, and how are they used in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Data attributes are custom attributes that start with "data-" in HTML. They are used to store additional information that can be accessed using JavaScript. This allows developers to embed custom data in HTML elements and retrieve it using methods like <code>getAttribute</code>.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        डेटा विशेषताएँ HTML में "data-" से शुरू होने वाले कस्टम विशेषताएँ होती हैं। इन्हें अतिरिक्त जानकारी संग्रहीत करने के लिए उपयोग किया जाता है जिसे JavaScript का उपयोग करके एक्सेस किया जा सकता है। इससे डेवलपर्स को HTML तत्वों में कस्टम डेटा एम्बेड करने और इसे <code>getAttribute</code> जैसे तरीकों का उपयोग करके पुनः प्राप्त करने की अनुमति मिलती है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 34 -->
+<div class="question-container">
+    <div class="question">Question 34: What is the "reduce" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "reduce" method executes a reducer function (that you provide) on each element of the array, resulting in a single output value. It is often used to aggregate data, such as summing values or combining arrays.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Reduce" मेथड एक रिड्यूसर फ़ंक्शन को (जो आप प्रदान करते हैं) एरे के प्रत्येक तत्व पर निष्पादित करता है, जिससे एक एकल आउटपुट मान प्राप्त होता है। इसका उपयोग अक्सर डेटा को संचित करने के लिए किया जाता है, जैसे मानों को जोड़ना या एरे को जोड़ना।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 35 -->
+<div class="question-container">
+    <div class="question">Question 35: What is the "filter" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "filter" method creates a new array with all elements that pass the test implemented by the provided function. It does not change the original array and is used for filtering data based on certain criteria.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Filter" मेथड एक नया एरे बनाता है जिसमें सभी तत्व होते हैं जो प्रदान किए गए फ़ंक्शन द्वारा लागू किए गए परीक्षण को पास करते हैं। यह मूल एरे को नहीं बदलता और कुछ मानदंडों के आधार पर डेटा को फ़िल्टर करने के लिए उपयोग किया जाता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 36 -->
+<div class="question-container">
+    <div class="question">Question 36: What are "higher-order functions" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Higher-order functions are functions that can take other functions as arguments or return them as results. They are a key feature of functional programming in JavaScript and are often used for callbacks, promises, and event handling.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        उच्च-क्रम फ़ंक्शन वे फ़ंक्शन होते हैं जो अन्य फ़ंक्शंस को तर्क के रूप में ले सकते हैं या परिणाम के रूप में उन्हें लौटा सकते हैं। वे JavaScript में कार्यात्मक प्रोग्रामिंग की एक प्रमुख विशेषता हैं और अक्सर कॉलबैक, प्रॉमिस, और इवेंट हैंडलिंग के लिए उपयोग किए जाते हैं।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 37 -->
+<div class="question-container">
+    <div class="question">Question 37: What is the "every" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "every" method tests whether all elements in the array pass the test implemented by the provided function. It returns true if all elements satisfy the condition, and false otherwise.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Every" मेथड परीक्षण करता है कि क्या एरे के सभी तत्व उस फ़ंक्शन द्वारा लागू की गई परीक्षण को पास करते हैं। यदि सभी तत्व शर्त को पूरा करते हैं, तो यह true लौटाता है, अन्यथा false।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 38 -->
+<div class="question-container">
+    <div class="question">Question 38: What is the "some" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "some" method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if at least one element satisfies the condition, and false otherwise.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Some" मेथड परीक्षण करता है कि क्या एरे में कम से कम एक तत्व उस फ़ंक्शन द्वारा लागू की गई परीक्षण को पास करता है। यदि कम से कम एक तत्व शर्त को पूरा करता है, तो यह true लौटाता है, अन्यथा false।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 39 -->
+<div class="question-container">
+    <div class="question">Question 39: What are "Promises" in JavaScript, and how do they work?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Promises are objects that represent the eventual completion (or failure) of an asynchronous operation and its resulting value. A promise can be in one of three states: pending, fulfilled, or rejected. They provide a cleaner alternative to callback functions for handling asynchronous operations.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        प्रॉमिस वे ऑब्जेक्ट होते हैं जो असिंक्रोनस ऑपरेशन के अंततः पूर्णता (या विफलता) और उसके परिणामी मान का प्रतिनिधित्व करते हैं। एक प्रॉमिस तीन स्थितियों में से एक में हो सकता है: पेंडिंग, फुलफिल्ड, या रिजेक्टेड। वे असिंक्रोनस ऑपरेशन्स को संभालने के लिए कॉलबैक फ़ंक्शन का एक साफ़ विकल्प प्रदान करते हैं।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 40 -->
+<div class="question-container">
+    <div class="question">Question 40: What is the "join" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "join" method creates and returns a new string by concatenating all of the elements in an array, separated by a specified separator string. If no separator is specified, the default is a comma.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Join" मेथड एक नया स्ट्रिंग बनाता है और लौटाता है जो एरे के सभी तत्वों को एक निर्दिष्ट विभाजक स्ट्रिंग से जोड़कर बनता है। यदि कोई विभाजक निर्दिष्ट नहीं किया गया है, तो डिफ़ॉल्ट एक कॉमा होता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 41 -->
+<div class="question-container">
+    <div class="question">Question 41: What is the "slice" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "slice" method returns a shallow copy of a portion of an array into a new array object. It takes two arguments: the start index (inclusive) and the end index (exclusive).
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Slice" मेथड एरे के एक हिस्से की एक सतही प्रति को एक नए एरे ऑब्जेक्ट में लौटाता है। यह दो तर्क लेता है: प्रारंभिक अनुक्रमांक (शामिल) और समाप्ति अनुक्रमांक (असामिल)।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 42 -->
+<div class="question-container">
+    <div class="question">Question 42: What is "localStorage" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        "localStorage" is a web storage feature that allows you to store data in the browser persistently. The data is stored as key/value pairs and persists even after the browser is closed. It can hold up to 5MB of data, depending on the browser.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "LocalStorage" एक वेब स्टोरेज विशेषता है जो आपको ब्राउज़र में डेटा को स्थायी रूप से स्टोर करने की अनुमति देती है। डेटा को कुंजी/मान जोड़े के रूप में संग्रहीत किया जाता है और ब्राउज़र बंद होने के बाद भी बना रहता है। यह ब्राउज़र के आधार पर 5MB तक डेटा रख सकता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 43 -->
+<div class="question-container">
+    <div class="question">Question 43: What is the "sessionStorage" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        "sessionStorage" is similar to "localStorage," but it only stores data for the duration of the page session. The data is cleared when the page session ends, which happens when the tab or browser is closed.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "SessionStorage" "LocalStorage" के समान है, लेकिन यह केवल पृष्ठ सत्र की अवधि के लिए डेटा संग्रहीत करता है। जब पृष्ठ सत्र समाप्त होता है, तो डेटा मिटा दिया जाता है, जो तब होता है जब टैब या ब्राउज़र बंद होता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 44 -->
+<div class="question-container">
+    <div class="question">Question 44: What is "JSON" and how is it used in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. In JavaScript, you can use `JSON.stringify()` to convert a JavaScript object to a JSON string and `JSON.parse()` to convert a JSON string back into a JavaScript object.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        JSON (JavaScript ऑब्जेक्ट नोटेशन) एक हल्का डेटा इंटरचेंज फॉर्मेट है जो मनुष्यों के लिए पढ़ना और लिखना आसान है और मशीनों के लिए पार्स और उत्पन्न करना आसान है। JavaScript में, आप एक JavaScript ऑब्जेक्ट को JSON स्ट्रिंग में परिवर्तित करने के लिए `JSON.stringify()` का उपयोग कर सकते हैं और JSON स्ट्रिंग को फिर से JavaScript ऑब्जेक्ट में परिवर्तित करने के लिए `JSON.parse()` का उपयोग कर सकते हैं।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 45 -->
+<div class="question-container">
+    <div class="question">Question 45: What is "event bubbling" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Event bubbling is a type of event propagation in the DOM where the event starts from the target element and bubbles up to its parent elements. This means that the event triggers on the target element first, and then on its ancestors in the DOM hierarchy.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        इवेंट बबलिंग DOM में इवेंट प्रसार का एक प्रकार है जहाँ इवेंट लक्ष्य तत्व से शुरू होता है और इसके माता-पिता तत्वों की ओर बढ़ता है। इसका मतलब है कि इवेंट सबसे पहले लक्ष्य तत्व पर ट्रिगर होता है, और फिर DOM पदानुक्रम में इसके पूर्वजों पर।
+    </div>
+</div>
+
+<hr>
+<!-- Question 46 -->
+<div class="question-container">
+    <div class="question">Question 46: What is "event capturing" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Event capturing is a phase of event propagation in the DOM where the event starts from the topmost parent element and descends down to the target element. This is the opposite of event bubbling.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        इवेंट कैप्चरिंग DOM में इवेंट प्रसार का एक चरण है जहां इवेंट सबसे ऊपरी माता-पिता तत्व से शुरू होता है और लक्ष्य तत्व की ओर उतरता है। यह इवेंट बबलिंग का विपरीत है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 47 -->
+<div class="question-container">
+    <div class="question">Question 47: What is the difference between "null" and "undefined" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        "null" is an intentional assignment of a non-value, representing no value or object. "undefined," on the other hand, means a variable has been declared but has not yet been assigned a value.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Null" एक जानबूझकर गैर-मूल्य के असाइनमेंट का प्रतिनिधित्व करता है, जो कोई मान या ऑब्जेक्ट नहीं दर्शाता है। दूसरी ओर, "undefined" का मतलब है कि एक वेरिएबल घोषित किया गया है लेकिन उसे अभी तक एक मान असाइन नहीं किया गया है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 48 -->
+<div class="question-container">
+    <div class="question">Question 48: What is a "self-invoking function" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        A self-invoking function (or IIFE) is a function that runs as soon as it is defined. It is a design pattern that helps to create a local scope and avoid polluting the global scope.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        एक आत्म-उद्देश्य फ़ंक्शन (या IIFE) एक ऐसा फ़ंक्शन है जो जैसे ही इसे परिभाषित किया जाता है, तुरंत चलाता है। यह एक डिज़ाइन पैटर्न है जो स्थानीय स्कोप बनाने में मदद करता है और वैश्विक स्कोप को प्रदूषित करने से रोकता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 49 -->
+<div class="question-container">
+    <div class="question">Question 49: What is a "callback hell" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Callback hell refers to the situation where multiple nested callback functions become difficult to read and maintain. This can lead to code that is hard to understand, often resembling a pyramid structure.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        कॉलबैक हेल उस स्थिति को संदर्भित करता है जहाँ कई स्तरित कॉलबैक फ़ंक्शन पढ़ने और बनाए रखने में कठिन हो जाते हैं। इससे ऐसा कोड बन सकता है जो समझने में कठिन हो, जो अक्सर पिरामिड संरचना जैसा दिखता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 50 -->
+<div class="question-container">
+    <div class="question">Question 50: What is the "filter" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "filter" method creates a new array with all elements that pass the test implemented by the provided function. It does not modify the original array.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Filter" मेथड एक नया एरे बनाता है जिसमें सभी तत्व होते हैं जो प्रदान किए गए फ़ंक्शन द्वारा लागू की गई परीक्षण को पास करते हैं। यह मूल एरे को संशोधित नहीं करता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 51 -->
+<div class="question-container">
+    <div class="question">Question 51: What is the purpose of the "setInterval" function in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "setInterval" function calls a specified function repeatedly at fixed time intervals, which is defined in milliseconds. It continues until it is cleared using "clearInterval."
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "SetInterval" फ़ंक्शन एक निर्दिष्ट फ़ंक्शन को बार-बार निश्चित समय अंतराल पर कॉल करता है, जो मिलीसेकंड में परिभाषित होता है। यह तब तक जारी रहता है जब तक इसे "clearInterval" का उपयोग करके स्पष्ट नहीं किया जाता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 52 -->
+<div class="question-container">
+    <div class="question">Question 52: What is "array destructuring" in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        Array destructuring is a syntax that allows unpacking values from arrays into distinct variables. It provides a more concise way to extract values from arrays.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        एरे डेस्ट्रक्चरिंग एक सिंटैक्स है जो एरे से मूल्यों को विभिन्न वेरिएबल में अनपैक करने की अनुमति देता है। यह एरे से मान निकालने के लिए एक अधिक संक्षिप्त तरीका प्रदान करता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 53 -->
+<div class="question-container">
+    <div class="question">Question 53: What is the "forEach" method in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "forEach" method executes a provided function once for each array element. It does not return a new array and cannot be used for asynchronous operations.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "ForEach" मेथड प्रत्येक एरे तत्व के लिए एक प्रदान किए गए फ़ंक्शन को एक बार निष्पादित करता है। यह एक नया एरे नहीं लौटाता है और इसे असिंक्रोनस ऑपरेशंस के लिए उपयोग नहीं किया जा सकता है।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 54 -->
+<div class="question-container">
+    <div class="question">Question 54: What is the purpose of the "try...catch" statement in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "try...catch" statement allows you to test a block of code for errors. If an error occurs, the code in the catch block is executed, allowing you to handle the error gracefully.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Try...catch" कथन आपको त्रुटियों के लिए कोड के एक ब्लॉक का परीक्षण करने की अनुमति देता है। यदि कोई त्रुटि होती है, तो कैच ब्लॉक में कोड निष्पादित होता है, जिससे आप त्रुटि को कुशलतापूर्वक संभाल सकते हैं।
+    </div>
+</div>
+
+<hr>
+
+<!-- Question 55 -->
+<div class="question-container">
+    <div class="question">Question 55: What is the difference between "shift" and "unshift" methods in JavaScript?</div>
+    <div class="answer">
+        <strong>Answer (English):</strong><br>
+        The "shift" method removes the first element from an array and returns that element. The "unshift" method adds one or more elements to the beginning of an array and returns the new length of the array.
+    </div>
+    <div class="explanation">
+        <strong>Explanation (Hindi):</strong><br>
+        "Shift" मेथड एरे से पहले तत्व को हटा देता है और उस तत्व को लौटाता है। "Unshift" मेथड एक या अधिक तत्वों को एरे की शुरुआत में जोड़ता है और एरे की नई लंबाई लौटाता है।
+    </div>
+</div>
+
+    <!-- Repeat similar blocks for other questions -->
+
+</body>
+</html>

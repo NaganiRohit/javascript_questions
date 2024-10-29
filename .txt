@@ -1,0 +1,55 @@
+Question 1: What is JavaScript, and how is it used in web development?
+Question 2: Explain the concept of "closures" in JavaScript.
+Question 3: What is the difference between let, var, and const in JavaScript?
+Question 4: What is the purpose of JavaScript's this keyword?
+Question 5: What is the difference between synchronous and asynchronous JavaScript?
+Question 6: What is the difference between "==" and "===" in JavaScript?
+Question 7: What is an IIFE (Immediately Invoked Function Expression) in JavaScript?
+Question 8: Explain "hoisting" in JavaScript.
+Question 9: What is a promise in JavaScript, and how does it work?
+Question 10: What is the use of the "async" and "await" keywords in JavaScript?
+Question 11: What is event delegation in JavaScript?
+Question 12: Explain "callback functions" in JavaScript.
+Question 13: What is the purpose of the "new" keyword in JavaScript?
+Question 14: Explain the concept of "prototypal inheritance" in JavaScript.
+Question 15: What is the purpose of "strict mode" in JavaScript, and how is it enabled?
+Question 16: What is the "spread" operator in JavaScript?
+Question 17: What is the "rest" parameter in JavaScript?
+Question 18: What is a "generator" function in JavaScript?
+Question 19: Explain the difference between "call", "apply", and "bind" methods in JavaScript.
+Question 20: What is the "debounce" function, and why is it used?
+Question 21: What is a "Polyfill" in JavaScript?
+Question 22: What is the "fetch" API in JavaScript?
+Question 23: What are JavaScript modules, and how are they used?
+Question 24: What is the purpose of the "with" statement in JavaScript?
+Question 25: Explain the concept of "template literals" in JavaScript.
+Question 26: What is "shadowing" in JavaScript?
+Question 27: What is the "map" method in JavaScript?
+Question 28: What is the difference between "slice" and "splice" in JavaScript?
+Question 29: What is an "event loop" in JavaScript?
+Question 30: Explain the concept of "service workers" in JavaScript.
+Question 31: What is the "event.preventDefault()" method in JavaScript?
+Question 32: What is the purpose of the "setTimeout" function in JavaScript?
+Question 33: What are "data attributes" in HTML, and how are they used in JavaScript?
+Question 34: What is the "reduce" method in JavaScript?
+Question 35: What is the "filter" method in JavaScript?Question 36: What are "higher-order functions" in JavaScript?
+Question 36: What are "higher-order functions" in JavaScript?
+Question 37: What is the "every" method in JavaScript?
+Question 38: What is the "some" method in JavaScript?
+Question 39: What are "Promises" in JavaScript, and how do they work?
+Question 40: What is the "join" method in JavaScript?
+Question 41: What is the "slice" method in JavaScript?
+Question 42: What is "localStorage" in JavaScript?
+Question 43: What is the "sessionStorage" in JavaScript?
+Question 44: What is "JSON" and how is it used in JavaScript?
+Question 45: What is "event bubbling" in JavaScript?
+Question 46: What is "event capturing" in JavaScript?
+Question 47: What is the difference between "null" and "undefined" in JavaScript?
+Question 48: What is a "self-invoking function" in JavaScript?
+Question 49: What is a "callback hell" in JavaScript?
+Question 50: What is the "filter" method in JavaScript?
+Question 51: What is the purpose of the "setInterval" function in JavaScript?
+Question 52: What is "array destructuring" in JavaScript?
+Question 53: What is the "forEach" method in JavaScript?
+Question 54: What is the purpose of the "try...catch" statement in JavaScript?
+Question 55: What is the difference between "shift" and "unshift" methods in JavaScript?
